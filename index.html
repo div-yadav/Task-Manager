@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="head">
+        <div id="heading">Task Manager</div>
+    </div>
+
+    <div class="mid">
+        <div class="input-container">
+
+            <form id="dateform new-todo-form">
+
+                <div class="filter-icon" id="filter-icon"><i class="fa-solid fa-filter fa-xs" style="color: red;margin-left: 60px;"></i>
+                </div>
+                <div class="filter">
+
+
+                    <div class="filter_dropdown" id="filter_dropdown">
+                        <select id="filter_select">
+                            <option disabled selected>Filter</option>
+                            <option value="personal">Personal</option>
+                            <option value="work">Work</option>
+                            <option value="important">Important</option>
+                            <option value="complete">complete</option>
+                            <option value="incomplete">incomplete</option>
+                            <option value="all">all</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <form id="new-todo-form">
+                <input type="datetime-local" id="deadline" name="deadline">
+                <div class="outer-div-of-input-grid">
+                    <input type="text" placeholder="e.g. Buy some groceries" name="content" id="entered-list"
+                        required />
+                    <div class="catagories-dropdown" id="catagories-dropdown">
+                        <select id="Catagory">
+                            <option disabled selected>Catagories</option>
+                            <option value="important">Important</option>
+                            <option value="personal">Personal</option>
+                            <option value="work">Work</option>
+                        </select>
+                    </div>
+                    <div class="sort-group">
+                        <div class="sort-items">
+
+
+                            <select id="sort-select">
+                                <option disabled selected>Sort</option>
+                                <option value="created-newest">Newest First</option>
+                                <option value="created-oldest">Oldest First</option>
+                                <option value="alphabetical-asc">Content (A-Z)</option>
+                                <option value="alphabetical-desc">Content (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="addtask">
+
+                    <button id="button">Add Task</button>
+                </form>
+                    <div class="input-group" id="search-group">
+                        <input type="text" id="search" placeholder="...tap to search a task" class="input input-alt" class="output">
+                        <span class="input-border input-border-alt" id="search-icon"> 
+                        </span>
+                    </div>
+                    <i class="fa-solid fa-microphone" id="mic-icon" style="color: #000000;"></i>
+                                </div>
+
+                            
+
+
+            
+        </div>
+
+
+        <div class="all-task">
+            <div class="list-heading-outer">
+                <div class="list-heading"><b><u>Your task's</u></b></div>
+            </div>
+            <div class="list" id="todo-list"></div>
+            <div class="search-results" id="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
