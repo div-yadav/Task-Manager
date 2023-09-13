@@ -74,7 +74,6 @@ html {
 
 #deadline {
   border: 2px solid black;
-  appearance: ;
   outline: none;
   height: 1.5rem;
   background: transparent;
@@ -82,7 +81,7 @@ html {
   border-radius: 0.25rem;
   cursor: pointer;
   position: absolute;
-  left: 50rem;
+  left: 49.7rem;
   top: 4rem;
 }
 
